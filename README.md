@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 AI-Powered Discord Bot
 
 A production-ready Discord bot built with Python and `discord.py`. Features slash commands, a modular cog architecture, and AI-powered conversations via OpenAI GPT.
@@ -117,3 +118,6 @@ discord-bot/
 ## 📝 License
 
 MIT — free to use and modify.
+=======
+# Discord-Bot
+>>>>>>> a29bb48f646049cf9046e58c90c656e878d4f728
