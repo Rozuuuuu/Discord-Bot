@@ -64,6 +64,10 @@ async def on_ready():
 
     # Load all cogs from the cogs/ folder
     cogs_dir = os.path.join(os.path.dirname(__file__), "cogs")
+    if not os.path.exists(cogs_dir):
+        os.makedirs(cogs_dir)
+        logger.info("Created missing cogs directory: %s", cogs_dir)
+
     for filename in os.listdir(cogs_dir):
         if filename.endswith(".py") and not filename.startswith("_"):
             cog_name = f"cogs.{filename[:-3]}"
